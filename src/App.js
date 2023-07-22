@@ -16,10 +16,11 @@ const App = () => (
       direction="column"
       alignItems="center"
       justifyContent="center"
-      height={"96vh"}
+      height={"80vh"}
+      minHeight={"600px"}
     >
-      <Grid item>
-        <Typography variant='h1'>FRBRG Ventures</Typography>
+      <Grid item textAlign={"center"}>
+        <Typography variant='h2'>FRBRG Ventures</Typography>
       </Grid>
       <Grid item>
         <Typography>© 2023</Typography>
