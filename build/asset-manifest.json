@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/frbrgHomepage/static/js/main.c83fe57d.js",
+    "index.html": "/frbrgHomepage/index.html",
+    "main.c83fe57d.js.map": "/frbrgHomepage/static/js/main.c83fe57d.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c83fe57d.js"
+  ]
+}
