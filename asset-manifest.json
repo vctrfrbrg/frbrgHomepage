@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.6ad59f95.js",
-    "index.html": "/index.html",
-    "main.6ad59f95.js.map": "/static/js/main.6ad59f95.js.map"
+    "main.js": "/frbrgHomepage/static/js/main.6ad59f95.js",
+    "index.html": "/frbrgHomepage/index.html",
+    "main.6ad59f95.js.map": "/frbrgHomepage/static/js/main.6ad59f95.js.map"
   },
   "entrypoints": [
     "static/js/main.6ad59f95.js"
