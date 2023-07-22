@@ -1,14 +1,18 @@
 import { Grid, Typography } from '@mui/material'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-  },
-});
+const App = () => {
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 
-const App = () => (
+  const darkTheme = createTheme({
+    palette: {
+      mode: prefersDarkMode ? 'dark' : 'light',
+    },
+  });
+
+  return(
   <ThemeProvider theme={darkTheme}>
     <CssBaseline />
     <Grid 
@@ -27,6 +31,7 @@ const App = () => (
       </Grid>
     </Grid>
     </ThemeProvider>
-);
+  )
+};
 
 export default App;
