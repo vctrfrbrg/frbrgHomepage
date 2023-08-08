@@ -1,7 +1,6 @@
 {
   "name": "app",
   "version": "0.1.0",
-  "homepage": "https://vctrfrbrg.github.io/frbrgHomepage",
   "private": true,
   "engines": {
     "node": "16.x"
