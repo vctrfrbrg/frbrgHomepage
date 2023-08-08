@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/frbrgHomepage/static/js/runtime~main.2a39bc3d.js"
   },
   {
-    "revision": "22fa872bacdb16e9f75b6b8a5304686c",
+    "revision": "afe0f9546856131507f3fe666714cd58",
     "url": "/frbrgHomepage/index.html"
   }
 ];
