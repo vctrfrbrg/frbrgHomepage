@@ -4,7 +4,7 @@
   "homepage": "https://vctrfrbrg.github.io/frbrgHomepage",
   "private": true,
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
