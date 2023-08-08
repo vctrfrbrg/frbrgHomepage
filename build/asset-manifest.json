@@ -1,10 +1,11 @@
 {
-  "files": {
-    "main.js": "/frbrgHomepage/static/js/main.c83fe57d.js",
-    "index.html": "/frbrgHomepage/index.html",
-    "main.c83fe57d.js.map": "/frbrgHomepage/static/js/main.c83fe57d.js.map"
-  },
-  "entrypoints": [
-    "static/js/main.c83fe57d.js"
-  ]
+  "main.js": "/frbrgHomepage/static/js/main.5cef13df.chunk.js",
+  "main.js.map": "/frbrgHomepage/static/js/main.5cef13df.chunk.js.map",
+  "static/js/1.909ead1f.chunk.js": "/frbrgHomepage/static/js/1.909ead1f.chunk.js",
+  "static/js/1.909ead1f.chunk.js.map": "/frbrgHomepage/static/js/1.909ead1f.chunk.js.map",
+  "runtime~main.js": "/frbrgHomepage/static/js/runtime~main.2a39bc3d.js",
+  "runtime~main.js.map": "/frbrgHomepage/static/js/runtime~main.2a39bc3d.js.map",
+  "index.html": "/frbrgHomepage/index.html",
+  "precache-manifest.034cccb8e56374f1dfc0ba328804361e.js": "/frbrgHomepage/precache-manifest.034cccb8e56374f1dfc0ba328804361e.js",
+  "service-worker.js": "/frbrgHomepage/service-worker.js"
 }
