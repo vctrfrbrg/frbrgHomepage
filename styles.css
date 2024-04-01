@@ -7,10 +7,15 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 80vh;
+    min-height: 600px;
     overflow-y: hidden;
     background-color: #fdfffc;
     color: #171a21;
+}
+
+header {
+    max-height: fit-content;
 }
 
 h1 {
