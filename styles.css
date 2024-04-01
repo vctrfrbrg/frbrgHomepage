@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Prata", serif;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: #fdfffc;
+    color: #171a21;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #171a21;
+        color: #fdfffc;
+    }
+}
