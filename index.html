@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRBRG Ventures</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bitter:ital@0;1&family=Prata&display=swap');
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>FRBRG Ventures</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- 1. Preconnect to Google Fonts domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- 2. Preload the stylesheet itself -->
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Bitter:ital@0;1&family=Prata&display=swap"
+  >
+  <!-- 3. Fallback to load it as a stylesheet once preloaded -->
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bitter:ital@0;1&family=Prata&display=swap"
+    media="print"
+    onload="this.media='all'"
+  >
+
+  <!-- 4. Optional: font-display swap to avoid invisible text -->
+  <style>
+    /* ensure fallback text shows immediately, then swapped for webfont */
+    @font-face {
+      font-family: 'Bitter';
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+      src: url('https://fonts.gstatic.com/s/bitter/v20/…woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Prata';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('https://fonts.gstatic.com/s/prata/v12/…woff2') format('woff2');
+    }
+  </style>
+
+  <!-- your other styles -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>FRBRG Ventures</h1>
-        <h2>© 2024</h2>
+        <h2>© 2025</h2>
     </header>
 </body>
 </html>
