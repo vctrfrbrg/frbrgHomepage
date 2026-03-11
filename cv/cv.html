@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Profile | Victor Friberg</title>
+    <link rel="stylesheet" href="../styles.css">
+
+    <style>
+        /* Overriding restrictive landing-page styles for a detailed CV document */
+        body {
+            height: auto;
+            min-height: 100vh;
+            overflow-y: auto;
+            display: block;
+            text-align: left;
+            padding: 40px 20px;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: transparent;
+            padding-bottom: 40px;
+            padding-top: 80px;
+        }
+
+        .section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(23, 26, 33, 0.1);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .section {
+                border-top-color: rgba(253, 255, 252, 0.1);
+            }
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            text-align: left;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+        }
+
+        .tech-tag {
+            display: inline-block;
+            font-size: 12px;
+            padding: 2px 8px;
+            margin: 2px;
+            border: 1px solid currentColor;
+            border-radius: 4px;
+            font-weight: 400;
+        }
+
+        .highlight-box {
+            background: rgba(52, 152, 219, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-weight: 300;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        ul {
+            padding-left: 18px;
+            font-weight: 300;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .meta {
+            font-size: 14px;
+            opacity: 0.7;
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cv-container">
+        <header>
+            <h1>Victor Friberg</h1>
+            <h2>AI Application Consultant | Architecture & Strategy</h2>
+            <p>
+                <a href="mailto:victor@frbrg.se">victor@frbrg.se</a> |
+                <a href="tel:0737203032">073-720 30 32</a> |
+                <a href="https://linkedin.com/in/fribergvictor">LinkedIn</a>
+            </p>
+        </header>
+
+        <div class="section">
+            <h3>Executive Summary</h3>
+            <p>
+                Self-driven AI Lead and Fullstack Developer specializing in context engineering and agentic
+                workflows
+                I bridge the gap between "cool tech" and "business value" by focusing on implementation-heavy AI
+                strategy.
+                With an entrepreneurial background, I prioritize the business case—often knowing when *not* to build a
+                feature to ensure long-term scalability and impact
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>The AI Tech Stack (Detailed)</h3>
+            <div class="grid">
+                <div>
+                    <strong>LLMs & Models</strong><br>
+                    <span class="tech-tag">GPT-4, GPT4o, GPT-5, GPT-5.1, GPT-5.2, GPT-5.3-codex</span>
+                    <span class="tech-tag">Claude 3.5 (Sonnet/Opus)</span>
+                    <span class="tech-tag">Codex CLI</span>
+                    <span class="tech-tag">Local OSS PII Models</span>
+                    <p style="font-size: 14px;">Expertise in secure, self-hosted anonymization and slim custom API
+                        clients.</p>
+                </div>
+                <div>
+                    <strong>Orchestration & Data</strong><br>
+                    <span class="tech-tag">Semantic Kernel (.NET)</span>
+                    <span class="tech-tag">LangGraph / LangChain</span>
+                    <span class="tech-tag">Anthropic Agent SDK</span>
+                    <span class="tech-tag">Qdrant</span>
+                    <span class="tech-tag">LlamaParse</span>
+                    <p style="font-size: 14px;">Advanced RAG, multi-agent "Swarm" setups, and complex PDF data
+                        extraction.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Professional Experience</h3>
+
+            <div class="experience-item">
+                <strong>Position Green — AI Lead</strong>
+                <span class="meta">Jan 2024 – Present | Malmö, Sweden</span>
+                <ul>
+                    <li>Co-founded the AI team and architected the initial scalable AI-solutions.</li>
+                    <li>Developed fullstack features using React (TypeScript) and C#.</li>
+                    <li>Collaborated cross-functionally with sustainability experts to align tech with business
+                        goals</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>Key Impact:</strong> Conceptualized and led the AutoReporting project, from start to PoC,
+                    creating an AI-driven workflow that reduced reporting time by an estimated 30%.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <strong>MedBeat — App Developer</strong>
+                <span class="meta">Sep 2022 – Feb 2023 | Malmö, Sweden</span>
+                <ul>
+                    <li>Developed iOS and Android mobile applications for secure patient-doctor communication.
+                    </li>
+                    <li>Collaborated with healthcare professionals to ensure user-friendly and reliable
+                        functionality</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <strong>Bygghemma — Web Developer</strong>
+                <span class="meta">May 2020 – Feb 2022 | Malmö, Sweden</span>
+                <ul>
+                    <li>Maintained and scaled high-performance e-commerce features</li>
+                    <li>Introduced architectural improvements that increased platform stability</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Entrepreneurship & Private Lab</h3>
+            <div class="grid">
+                <div>
+                    <strong>Antler Nordics</strong><br>
+                    <span class="meta">Entrepreneur | 2022</span>
+                    <p>Focused on product validation and early-stage company building in a fast-paced international
+                        environment.</p>
+                </div>
+                <div>
+                    <strong>Recent Private Builds (2025-2026)</strong><br>
+                    <p>Building agentic setups using <strong>n8n</strong> and <strong>Claude Code</strong>. Extensive
+                        testing of agent-to-agent communication and smart tool calling within .NET environments</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Education</h3>
+            <ul>
+                <li><strong>Agile Project Management</strong> – IHM Business School (2021-, dropout)</li>
+                <li><strong>Innovative Programming / Mechanical Engineering</strong> – Linköping University (2015-,
+                    dropout)</li>
+                <li><strong>IT Project Manager</strong> – Gozinto Studentkonsulter</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
