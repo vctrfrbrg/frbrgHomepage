@@ -88,6 +88,46 @@
             margin-bottom: 10px;
             display: block;
         }
+
+        .summary-list {
+            list-style: none;
+            padding-left: 0;
+            font-weight: 300;
+        }
+
+        .summary-list li {
+            margin-bottom: 15px;
+        }
+
+        .tech-section {
+            margin-bottom: 30px;
+        }
+
+        .tech-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .philosophy-section {
+            margin-bottom: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(23, 26, 33, 0.05);
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        .project-description {
+            font-weight: 300;
+            margin-top: 8px;
+        }
+
+        .antler-section {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 
@@ -105,48 +145,60 @@
 
         <div class="section">
             <h3>Executive Summary</h3>
-            <ul style="list-style: none; padding-left: 0; font-weight: 300;">
-                <li style="margin-bottom: 15px;">
+            <ul class="summary-list">
+                <li>
                     <i>Self-driven AI Lead:</i> AI projects and initiatives at Position Green, where I built
-                    the initial AI team and solutions from the ground up.
+                    the initial AI team and solutions from the ground up
                 </li>
-                <li style="margin-bottom: 15px;">
+                <li>
                     <i>Fullstack Expert:</i> Extensive expertise in TypeScript (fullstack) and C# (.NET),
-                    focusing on building scalable, international platforms where AI serves as the backbone technology.
+                    focusing on building scalable, international platforms where AI serves as the backbone technology
                 </li>
-                <li style="margin-bottom: 15px;">
+                <li>
                     <i>Strategic Pragmatism:</i> Entrepreneurial background enables me to bridge the gap
                     between technical complexity and business impact, prioritizing long-term scalability over "hype"
-                    features.
+                    features
                 </li>
             </ul>
+        </div>
+
+        <div style="margin-bottom: 30px; padding-top: 20px; border-top: 1px solid rgba(23, 26, 33, 0.05);">
+            <h4 style="font-size: 18px; margin-bottom: 15px; font-weight: 400;">Philosophy: Working <i>With</i> AI &
+                Building <i>For</i> AI</h4>
+            <p style="font-weight: 300;">
+                I approach AI not as a black-box tool, but as a collaborative partner. My projects emphasize
+                <i>transparency</i>, <i>user control</i>, and <i>meaningful
+                    automation</i>—building systems where AI augments human capability rather than replacing
+                decision-making
+            </p>
         </div>
 
         <div class="section">
             <h3>Technical Specializations</h3>
 
-            <div style="margin-bottom: 30px;">
+            <div class="tech-section">
                 <i>LLMs & Models</i>
-                <ul style="list-style: none; padding-left: 0;">
-                    <li><i>OpenAI:</i> GPT-3.5 through GPT-5.3-Codex (API, Codex CLI, Semantic Kernel)</li>
-                    <li><i>Anthropic:</i> Claude 3.5 Sonnet & Opus (Agent SDK TypeScript, Claude Code)</li>
+                <ul>
+                    <li><i>OpenAI:</i> From GPT-3.5 through GPT-5.3-Codex (API, Codex CLI, Semantic Kernel, Agent SDK
+                        (TypeScript))</li>
+                    <li><i>Anthropic:</i> Claude 4.5, 4.6 Sonnet & Opus (Agent SDK (TypeScript), Claude Code)</li>
                     <li><i>Local/OSS:</i> Llama models, Qwen models, niche PII models for self-hosted
-                        anonymization, LM Studio</li>
+                        anonymization, with Ollama and LM Studio</li>
                 </ul>
             </div>
 
-            <div style="margin-bottom: 30px;">
+            <div class="tech-section">
                 <i>Orchestration Frameworks</i>
-                <ul style="list-style: none; padding-left: 0;">
-                    <li><i>Frameworks:</i> Semantic Kernel (.NET), LangChain/LangGraph (Python), OpenAI Swarm,
-                        Anthropic Agent SDK</li>
+                <ul>
+                    <li><i>Frameworks:</i> Semantic Kernel (.NET), LangChain/LangGraph (Python), OpenAI Agent
+                        SDK (TypeScript), Anthropic Agent SDK (TypeScript)</li>
                     <li><i>Automation:</i> n8n, custom slim API clients</li>
                 </ul>
             </div>
 
-            <div style="margin-bottom: 30px;">
+            <div class="tech-section">
                 <i>Advanced Techniques</i>
-                <ul style="list-style: none; padding-left: 0;">
+                <ul>
                     <li><i>Agentic Workflows:</i> Multi-agent setups, smart tools, and "agents-in-chat"
                         patterns</li>
                     <li><i>Context Engineering:</i> Advanced RAG, smart data packaging, and scraping
@@ -154,9 +206,9 @@
                 </ul>
             </div>
 
-            <div style="margin-bottom: 30px;">
+            <div class="tech-section">
                 <i>Data & Vector Infrastructure</i>
-                <ul style="list-style: none; padding-left: 0;">
+                <ul>
                     <li><i>Vector DBs:</i> Qdrant (primary), pgvector</li>
                     <li><i>Security:</i> PII anonymization and secure data flow design</li>
                 </ul>
@@ -170,15 +222,23 @@
                 <i>Position Green — AI Lead and AI Engineer</i>
                 <span class="meta">Jan 2024 – Present | Malmö, Sweden</span>
                 <ul>
-                    <li>Co-founded the AI team and architected the initial scalable AI-solutions.</li>
-                    <li>Developed fullstack features using React (TypeScript) and C#.</li>
-                    <lI>Designed and implemented AI-driven workflows and agentic systems</lI>
-                    <li>Collaborated cross-functionally with sustainability experts to align tech with business
-                        goals</li>
+                    <li>Co-founded the AI team and architected the initial scalable AI-solutions</li>
+                    <li>Developed fullstack features using React (TypeScript) and C#</li>
+                    <li>Designed and implemented AI-driven workflows and agentic systems</li>
+                    <li>Served as <i>AI Champion</i> for the dev team: introduced and maintained current AI
+                        tools (Claude Code, after evaluation), helped make company-wide strategic tool decisions
+                        (ChatGPT Team), and assisted in establishing AI policies and best practices</li>
+                    <li>Hosted <i>Techo Tuesdays</i> (weekly
+                        lunch meetups) to share industry news and demonstrate practical AI applications for the dev
+                        team</li>
+                    <li>Ran <i>Friday afternoon hackathons</i> to encourage hands-on experimentation with AI
+                        workflows and agentic systems across the engineering organization</li>
+                    <li>Collaborated cross-functionally with sustainability experts to align tech with business goals
+                    </li>
                 </ul>
                 <div class="highlight-box">
                     <i>Key Impact:</i> Conceptualized and led the AutoReporting project, from start to PoC,
-                    creating an AI-driven workflow that reduced reporting time by an estimated 30%.
+                    creating an AI-driven workflow that reduced reporting time by an estimated 30%
                 </div>
             </div>
 
@@ -186,7 +246,7 @@
                 <i>MedBeat — App Developer</i>
                 <span class="meta">Sep 2022 – Feb 2023 | Malmö, Sweden</span>
                 <ul>
-                    <li>Developed iOS and Android mobile applications for secure patient-doctor communication.
+                    <li>Developed iOS and Android mobile applications for secure patient-doctor communication
                     </li>
                     <li>Collaborated with healthcare professionals to ensure user-friendly and reliable
                         functionality</li>
@@ -205,17 +265,50 @@
 
         <div class="section">
             <h3>Entrepreneurship & Private Lab</h3>
-            <div class="grid">
-                <div>
-                    <i>Antler Nordics</i><br>
-                    <span class="meta">Entrepreneur | 2022</span>
-                    <p>Focused on product validation and early-stage company building in a fast-paced international
-                        environment.</p>
+
+            <div style="margin-bottom: 20px;">
+                <i>Antler Nordics</i>
+                <span class="meta">Entrepreneur | 2022</span>
+                <p>Explored vertical farming solutions for sustainable protein plants and coffee production. Focused on product validation and early-stage company building in a fast-paced international environment.</p>
+            </div>
+
+            <div>
+                <h4 style="font-size: 18px; margin-bottom: 15px; font-weight: 400;">Current Private Projects (2025-2026)
+                </h4>
+
+                <div class="experience-item">
+                    <i>ClearCode</i>
+                    <p style="font-weight: 300; margin-top: 8px;">Code tool for teams with transparent agents and
+                        collaboration features. Focused on making AI-assisted coding understandable and controllable for
+                        distributed teams</p>
                 </div>
-                <div>
-                    <i>Recent Private Builds (2025-2026)</i><br>
-                    <p>Building agentic setups using <i>n8n</i> and <i>Claude Code</i>. Extensive
-                        testing of agent-to-agent communication and smart tool calling within .NET environments</p>
+
+                <div class="experience-item">
+                    <i>Family Station</i>
+                    <p style="font-weight: 300; margin-top: 8px;">iPad app combining video calling, local AI voice
+                        commands, and an innovative connection feature for families. Demonstrates how edge-deployed AI
+                        can enhance intimate user experiences without cloud dependency</p>
+                </div>
+
+                <div class="experience-item">
+                    <i>Crea</i>
+                    <p style="font-weight: 300; margin-top: 8px;">Smart finance tool helping finance teams automate
+                        payroll calculations and ensure accuracy. Built to reduce error-prone manual processes while
+                        maintaining full auditability</p>
+                </div>
+
+                <div class="experience-item">
+                    <i>Det Goda Valet</i>
+                    <p style="font-weight: 300; margin-top: 8px;">Consumer helper that displays ESG data per company and
+                        per item in Swedish grocery stores. Empowers shoppers to make informed, sustainable purchasing
+                        decisions through transparent environmental and social impact information</p>
+                </div>
+
+                <div class="experience-item">
+                    <i>Riksdagen Update</i>
+                    <p style="font-weight: 300; margin-top: 8px;">AI-driven summary of Swedish government decisions and
+                        future legislation, customized by user-selected timeframe and area of interest. Transforms
+                        complex parliamentary data into actionable, personalized civic intelligence</p>
                 </div>
             </div>
         </div>
@@ -228,6 +321,10 @@
                     dropout)</li>
                 <li><i>IT Project Manager</i> – Gozinto Studentkonsulter</li>
             </ul>
+        </div>
+
+        <div class="section">
+            <p>Updated March 11, 2026</p>
         </div>
     </div>
 </body>
