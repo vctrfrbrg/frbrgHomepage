@@ -19,6 +19,16 @@ header {
     max-height: fit-content;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+    background-color: #fdfffc;
+}
+
 h1 {
     font-size: 60px;
 }
@@ -44,6 +54,10 @@ a:hover {
         background-color: #171a21;
         color: #fdfffc;
         position: relative;
+    }
+
+    footer {
+        background-color: #171a21;
     }
 
     a {
