@@ -38,25 +38,8 @@
             }
         }
 
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            text-align: left;
-        }
-
         .experience-item {
             margin-bottom: 30px;
-        }
-
-        .tech-tag {
-            display: inline-block;
-            font-size: 12px;
-            padding: 2px 8px;
-            margin: 2px;
-            border: 1px solid currentColor;
-            border-radius: 4px;
-            font-weight: 400;
         }
 
         .highlight-box {
@@ -108,12 +91,6 @@
             padding-left: 0;
         }
 
-        .philosophy-section {
-            margin-bottom: 30px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(23, 26, 33, 0.05);
-        }
-
         h4 {
             font-size: 18px;
             margin-bottom: 15px;
@@ -125,18 +102,18 @@
             margin-top: 8px;
         }
 
-        .antler-section {
-            margin-bottom: 20px;
+        .previous-roles {
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .previous-roles span {
+            opacity: 0.7;
+            font-size: 14px;
         }
 
         p {
             font-weight: 300;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            .philosophy-section {
-                border-top-color: rgba(253, 255, 252, 0.05);
-            }
         }
     </style>
 </head>
@@ -145,214 +122,153 @@
     <div class="cv-container">
         <header>
             <h1>Victor Friberg</h1>
-            <h2>AI Application Consultant | Architecture & Strategy</h2>
+            <h2>AI Application Consultant</h2>
             <p>
                 <a href="mailto:victor@frbrg.se">victor@frbrg.se</a> |
-                <a href="tel:0737203032">073-720 30 32</a> |
+                <a href="tel:+46737203032">+46 73-720 30 32</a> |
                 <a href="https://linkedin.com/in/fribergvictor">LinkedIn</a>
             </p>
         </header>
 
         <div class="section">
-            <h3>Executive Summary</h3>
+            <h3>Summary</h3>
             <ul class="summary-list">
                 <li>
-                    <i>Self-driven AI Lead:</i> AI projects and initiatives at Position Green, where I helped building
-                    the initial AI team and solutions from the ground up
+                    I build AI products that ship. At Position Green, I co-founded the AI team and took the first
+                    AI-driven features from idea to production. Before that, 6+ years of fullstack engineering across
+                    e-commerce, healthtech, and hardware gives me the foundation to build AI into real systems, not just
+                    prototypes.
                 </li>
                 <li>
-                    <i>Fullstack Expert:</i> Extensive expertise in TypeScript (fullstack), Python, and C# (.NET),
-                    focusing on building scalable, international platforms where AI serves as the backbone technology in
-                    my features
-                </li>
-                <li>
-                    <i>Strategic Pragmatism:</i> Entrepreneurial background enables me to bridge the gap
-                    between technical complexity and business impact, prioritizing long-term scalability over "hype"
-                    features
+                    I work across TypeScript, Python, and C# (.NET) and choose the stack that fits the problem. My
+                    entrepreneurial background means I optimize for business impact over technical novelty.
                 </li>
             </ul>
-        </div>
-
-        <div class="philosophy-section">
-            <h4>Philosophy: Working <i>With</i> AI & Building <i>For</i> AI</h4>
-            <p>
-                I approach AI not as a black-box tool, but as a collaborative partner. My projects emphasize
-                <i>transparency</i>, <i>user control</i>, and <i>meaningful
-                    automation</i>—building systems where AI augments human capability rather than replacing
-                decision-making
-            </p>
         </div>
 
         <div class="section">
             <h3>Technical Specializations</h3>
 
             <div class="tech-section">
-                <i>LLMs & Models</i>
+                <i>LLMs & Providers</i>
                 <ul>
-                    <li><i>OpenAI:</i> From GPT-3.5 through GPT-5.3-Codex (API, Codex CLI, Semantic Kernel, Agent SDK
-                        (TypeScript))</li>
-                    <li><i>Anthropic:</i> Claude 4.5, 4.6 Sonnet & Opus (Agent SDK (TypeScript), Claude Code)</li>
-                    <li><i>Local/OSS:</i> Llama models, Qwen models, niche PII models for self-hosted
-                        anonymization, with Ollama and LM Studio</li>
+                    <li><i>OpenAI:</i> GPT-3.5 through GPT-5.3-Codex (API, Codex CLI, Semantic Kernel, Agent SDK)</li>
+                    <li><i>Anthropic:</i> Claude 4.5/4.6 Sonnet & Opus (Agent SDK, Claude Code)</li>
+                    <li><i>Local/OSS:</i> Llama, Qwen, specialized PII models for self-hosted anonymization (Ollama, LM
+                        Studio)</li>
                 </ul>
             </div>
 
             <div class="tech-section">
-                <i>Orchestration Frameworks</i>
+                <i>Orchestration & Patterns</i>
                 <ul>
-                    <li><i>Frameworks:</i> Semantic Kernel (.NET), LangChain/LangGraph (Python), OpenAI Agent
-                        SDK (TypeScript), Anthropic Agent SDK (TypeScript)</li>
-                    <li><i>Automation:</i> n8n, AppSmith</li>
+                    <li><i>Frameworks:</i> Semantic Kernel (.NET), LangChain/LangGraph (Python), OpenAI Agent SDK,
+                        Anthropic Agent SDK</li>
+                    <li><i>Agentic Systems:</i> Multi-agent orchestration, tool-use architectures, and embedded
+                        agent-in-chat patterns for end-user facing products</li>
+                    <li><i>Context Engineering:</i> RAG pipelines, document parsing and chunking strategies
+                        (LlamaParse), retrieval evaluation</li>
                 </ul>
             </div>
 
             <div class="tech-section">
-                <i>Advanced Techniques</i>
-                <ul>
-                    <li><i>Agentic Workflows:</i> Multi-agent setups, smart tools, and "agents-in-chat"
-                        patterns</li>
-                    <li><i>Context Engineering:</i> Advanced RAG, smart data packaging, and scraping
-                        (LlamaParse)</li>
-                </ul>
-            </div>
-
-            <div class="tech-section">
-                <i>Data & Vector Infrastructure</i>
+                <i>Infrastructure & Quality</i>
                 <ul>
                     <li><i>Vector DBs:</i> Qdrant (primary), pgvector</li>
-                    <li><i>Security:</i> PII anonymization and secure data flow design</li>
+                    <li><i>Security:</i> PII anonymization pipelines and secure data flow design</li>
+                    <li><i>Evaluation:</i> Prompt testing, output quality measurement, and cost/latency optimization
+                    </li>
                 </ul>
             </div>
         </div>
 
         <div class="section">
-            <h3>Professional Experience</h3>
-
-            <div class="experience-item">
-                <i>Position Green — AI Lead and AI Engineer</i>
-                <span class="meta">Jan 2024 – Present | Malmö, Sweden</span>
-                <ul>
-                    <li>Co-founded the AI team and architected the initial scalable AI-solutions</li>
-                    <li>Developed fullstack features using React (TypeScript) and C#</li>
-                    <li>Designed and implemented AI-driven workflows and agentic systems</li>
-                    <li>Served as <i>AI Champion</i> for the dev team: introduced and maintained current AI
-                        tools (Claude Code, after evaluation), helped make company-wide strategic tool decisions
-                        (ChatGPT Team), and assisted in establishing AI policies and best practices</li>
-                    <li>Hosted <i>Techo Tuesdays</i> (weekly
-                        lunch meetups) to share industry news and demonstrate practical AI applications for the dev
-                        team</li>
-                    <li>Ran <i>Friday afternoon hackathons</i> to encourage hands-on experimentation with AI
-                        workflows and agentic systems across the engineering organization</li>
-                    <li>Collaborated cross-functionally with sustainability experts to align tech with business goals
-                    </li>
-                </ul>
-                <div class="highlight-box">
-                    <i>Key Impact:</i> Conceptualized and led the AutoReporting project, from start to PoC,
-                    creating an AI-driven workflow that reduced reporting time by an estimated 30%
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <i>MedBeat — App Developer</i>
-                <span class="meta">Sep 2022 – Feb 2023 | Malmö, Sweden</span>
-                <ul>
-                    <li>Developed iOS and Android mobile applications for secure patient-doctor communication
-                    </li>
-                    <li>Collaborated with healthcare professionals to ensure user-friendly and reliable
-                        functionality</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <i>Bygghemma — Web Developer</i>
-                <span class="meta">May 2020 – Feb 2022 | Malmö, Sweden</span>
-                <ul>
-                    <li>Maintained and scaled high-performance e-commerce features</li>
-                    <li>Introduced architectural improvements that increased platform stability</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <i>FlatFrog Laboratories AB — Application Software Engineer</i>
-                <span class="meta">Oct 2018 – May 2020 | Lund, Sweden</span>
-                <ul>
-                    <li>Developed and maintained application software for interactive touch technology products</li>
-                    <li>Collaborated with hardware and firmware teams on system integration</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <i>HomeQ Technologies AB — Junior Developer</i>
-                <span class="meta">Oct 2017 – May 2018 | Linköping, Sweden</span>
-                <ul>
-                    <li>Developed features for an early-stage proptech startup platform</li>
-                    <li>Gained experience in fast-paced startup environment with rapid iteration</li>
-                </ul>
+            <h3>Position Green — AI Lead & AI Engineer</h3>
+            <span class="meta">Jan 2024 – Present | Malmö, Sweden</span>
+            <ul>
+                <li>Co-founded the AI team and architected the company's first AI-driven product features</li>
+                <li>Designed and built agentic workflows and fullstack features (React/TypeScript, C#/.NET)</li>
+                <li>Led AI tooling strategy company-wide: evaluated and rolled out Claude Code for engineering, drove
+                    ChatGPT Team adoption, and helped establish AI usage policies</li>
+                <li>Ran weekly <i>Techo Tuesdays</i> (industry news + live demos) and <i>Friday hackathons</i>
+                    (hands-on AI experimentation) for the engineering organization</li>
+                <li>Collaborated cross-functionally with sustainability domain experts to align AI capabilities with
+                    business goals</li>
+            </ul>
+            <div class="highlight-box">
+                <i>Key Project — AutoReporting:</i> Conceptualized and led from idea to PoC. An AI-driven workflow
+                that automates sustainability report generation, targeting a 30% reduction in reporting time
             </div>
         </div>
 
         <div class="section">
-            <h3>Entrepreneurship & Private Lab</h3>
+            <h3>Previous Engineering Roles</h3>
+            <p class="previous-roles">
+                <i>MedBeat</i> — Mobile Developer <span>2022–2023</span><br>
+                iOS/Android apps for secure patient-doctor communication<br><br>
+                <i>Bygghemma</i> — Web Developer <span>2020–2022</span><br>
+                High-performance e-commerce platform at scale<br><br>
+                <i>FlatFrog Laboratories</i> — Application Software Engineer <span>2018–2020</span><br>
+                Application software for interactive touch hardware, cross-team system integration<br><br>
+                <i>HomeQ Technologies</i> — Junior Developer <span>2017–2018</span><br>
+                Early-stage proptech startup
+            </p>
+        </div>
 
-            <div class="antler-section">
+        <div class="section">
+            <h3>Side Projects</h3>
+
+            <div class="experience-item">
                 <i>Antler Nordics</i>
                 <span class="meta">Entrepreneur | 2022</span>
-                <p>Explored vertical farming solutions for sustainable protein plants and coffee production. Focused on
-                    product validation and early-stage company building in a fast-paced international environment.</p>
+                <p class="project-description">Explored vertical farming for sustainable protein and coffee production.
+                    Product validation and early-stage company building in a fast-paced international cohort.</p>
             </div>
 
-            <div>
-                <h4>Current Private Projects (2025-2026)</h4>
+            <h4>Current Projects (2025–2026)</h4>
 
-                <div class="experience-item">
-                    <i>ClearCode</i>
-                    <p class="project-description">Code tool for teams with transparent agents and
-                        collaboration features. Focused on making AI-assisted coding understandable and controllable for
-                        distributed teams</p>
-                </div>
+            <div class="experience-item">
+                <i>ClearCode</i>
+                <p class="project-description">Coding tool with transparent agents and collaboration features for
+                    distributed teams. Making AI-assisted coding understandable and controllable.</p>
+            </div>
 
-                <div class="experience-item">
-                    <i>Family Station</i>
-                    <p class="project-description">iPad app combining video calling, local AI voice
-                        commands, and an innovative connection feature for families. Demonstrates how edge-deployed AI
-                        can enhance intimate user experiences without cloud dependency</p>
-                </div>
+            <div class="experience-item">
+                <i>Family Station</i>
+                <p class="project-description">iPad app combining video calling and local AI voice commands for
+                    families. Edge-deployed AI without cloud dependency.</p>
+            </div>
 
-                <div class="experience-item">
-                    <i>Crea</i>
-                    <p class="project-description">Smart finance tool helping finance teams automate
-                        payroll calculations and ensure accuracy. Built to reduce error-prone manual processes while
-                        maintaining full auditability</p>
-                </div>
+            <div class="experience-item">
+                <i>Crea</i>
+                <p class="project-description">Finance tool automating payroll calculations with full auditability.
+                    Replacing error-prone manual processes.</p>
+            </div>
 
-                <div class="experience-item">
-                    <i>Det Goda Valet</i>
-                    <p class="project-description">Consumer helper that displays ESG data per company and
-                        per item in Swedish grocery stores. Empowers shoppers to make informed, sustainable purchasing
-                        decisions through transparent environmental and social impact information</p>
-                </div>
+            <div class="experience-item">
+                <i>Det Goda Valet</i>
+                <p class="project-description">Displays ESG data per company and product in Swedish grocery stores.
+                    Transparent environmental and social impact at point of purchase.</p>
+            </div>
 
-                <div class="experience-item">
-                    <i>Riksdagen Update</i>
-                    <p class="project-description">AI-driven summary of Swedish government decisions and
-                        future legislation, customized by user-selected timeframe and area of interest. Transforms
-                        complex parliamentary data into actionable, personalized civic intelligence</p>
-                </div>
+            <div class="experience-item">
+                <i>Riksdagen Update</i>
+                <p class="project-description">AI-generated summaries of Swedish parliamentary decisions, personalized
+                    by timeframe and area of interest.</p>
             </div>
         </div>
 
         <div class="section">
             <h3>Education</h3>
             <ul>
-                <li><i>Agile Project Management</i> – IHM Business School (2021-, dropout)</li>
-                <li><i>Innovative Programming / Mechanical Engineering</i> – Linköping University (2015-,
-                    dropout)</li>
-                <li><i>IT Project Manager</i> – Gozinto Studentkonsulter</li>
+                <li><i>Agile Project Management</i> — IHM Business School (2021)</li>
+                <li><i>Innovative Programming / Mechanical Engineering</i> — Linköping University (2015–2017)</li>
+                <li><i>IT Project Manager</i> — Gozinto Studentkonsulter</li>
             </ul>
         </div>
 
         <div class="section">
-            <p>Updated March 11, 2026</p>
+            <p>Updated March 2026</p>
         </div>
     </div>
 </body>
