@@ -115,13 +115,39 @@
         p {
             font-weight: 300;
         }
+
+        .print-button {
+            display: inline-block;
+            margin-left: 12px;
+            padding: 6px 12px;
+            font-size: 14px;
+            font-weight: 300;
+            font-family: inherit;
+            color: inherit;
+            background: transparent;
+            border: 1px solid currentColor;
+            border-radius: 6px;
+            cursor: pointer;
+            opacity: 0.7;
+            vertical-align: middle;
+        }
+
+        .print-button:hover {
+            opacity: 1;
+        }
+
+        @media print {
+            .print-button {
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="cv-container">
         <header>
-            <h1>Victor Friberg</h1>
+            <h1>Victor Friberg <button class="print-button" onclick="window.print()">Download as PDF</button></h1>
             <h2>AI Application Consultant</h2>
             <p>
                 <a href="mailto:victor@frbrg.se">victor@frbrg.se</a> |
